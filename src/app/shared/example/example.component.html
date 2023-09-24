@@ -1,0 +1,20 @@
+<p>example works!</p>
+<ng-container *ngIf="this.valido">
+    <p-table [value]="[objeto]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Moneda</th>
+                <th>Precio</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData>
+            <tr>
+                <td>{{ rowData.moneda }}</td>
+                <td>{{ rowData.precio }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</ng-container>
+<ng-container *ngIf="!this.valido">
+    Mensaje no valido para mostrar
+</ng-container>
