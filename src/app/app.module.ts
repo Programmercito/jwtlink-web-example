@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './shared/example/example.component';
 import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table'
+import { TableModule } from 'primeng/table';
+import { InitComponent } from './shared/init/init.component'
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent
+    ExampleComponent,
+    InitComponent
   ],
   imports: [
     BrowserModule,
